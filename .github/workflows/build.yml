@@ -39,10 +39,10 @@ jobs:
 
         yes | sdkmanager --licenses || true
 
-        sdkmanager --install \
-          "platform-tools" \
-          "platforms;android-33" \
-          "build-tools;33.0.2"
+        sdkmanager --channel=0 \
+  "platform-tools" \
+  "platforms;android-33" \
+  "build-tools;33.0.2"
 
     - name: Set env
       run: |
